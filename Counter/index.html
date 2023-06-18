@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bussräknare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="zonadderare(0)">
+    <div class="contentContainer">
+        <div class="header">Öka antalet resor</div>
+    </div>
+    <div class="buttonContainer">
+        <button onclick="zonadderare(1)">1 zon</button>
+        <button onclick="zonadderare(2)">2 zoner</button>
+    </div>
+    <div class="info">
+        <div class="text">Antal resor:</div>
+        <div class="textBox" id="trips">0</div>
+    </div>
+    <div class="info">
+        <div class="text">Pengar "spenderat":</div>
+        <div class="textBox" id="money">0</div>
+    </div>
+    <script src="script.js"></script>
+    <button class="reset" onclick="reset()">&#x21bb;</button>
+</body>
+</html>
